@@ -19,4 +19,9 @@ from dhumtanana import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('registration/', views.user_registration, name= "register"),
+    path('login/', views.user_login, name= "login"),
+    path('', views.home, name= "home"),
+
+
 ]

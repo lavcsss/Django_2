@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Profile</title>
+        <h1>User Profile<h2>
+    </head>
+    <body>
+         {% csrf_token %}
+         <table>
+             <tr>
+                 <th>First name</th>
+                 <th>Last name</th>
+                 <th>Username</th>
+                 <th>Email</th>
+             </tr>
+             <tr>
+                 <td>{{user.first_name}}</td>
+                 <td>{{user.last_name}}</td>
+                 <td>{{user.username}}</td>
+                 <td>{{user.email}}</td>
+             </tr>
+            </table>
+        </body>
+</html>
